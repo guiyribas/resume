@@ -1,1 +1,33 @@
-<p>experience works!</p>
+<h3>
+  EXPERIENCE
+</h3>
+
+<div *ngFor="let job of jobs">
+  <h4>
+    {{ job.company }}
+    <h4 class="display-6">
+      <small class="text-muted">{{ job.function }}</small>
+    </h4>
+  </h4>
+  <div class="horizontal-container wrap teste">
+    <i class="fa fa-calendar"></i>
+    <span>{{ job.dateString }}</span>
+  </div>
+  <div class="horizontal-container wrap teste">
+    <i class="fa fa-map-marker"></i>
+    <span>{{ job.location }}</span>
+  </div>
+  <div>
+    <p>
+      {{ job.jobFunction }}
+    </p>
+    <ul>
+      <p>
+        Main tasks:
+      </p>
+      <li *ngFor="let tasks of job.mainTasks">
+        {{ tasks }}
+      </li>
+    </ul>
+  </div>
+</div>
