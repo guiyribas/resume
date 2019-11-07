@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./languages.component.scss']
 })
 export class LanguagesComponent implements OnInit {
+  languagesArray = [];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    this.languagesArray = [
+      { name: 'Portuguese', skillRange: 100 },
+      { name: 'English', skillRange: 80 },
+      { name: 'Spanish', skillRange: 80 }
+    ];
   }
 
+  ngOnInit() {}
 }

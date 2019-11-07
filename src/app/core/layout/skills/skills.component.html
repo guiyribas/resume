@@ -1,1 +1,14 @@
-<p>skills works!</p>
+<h4>
+  SKILLS
+</h4>
+
+<div class="container wrap">
+  <button
+    *ngFor="let skill of skillsArray"
+    type="button"
+    class="btn btn-outline-secondary space-between"
+    disabled
+  >
+    {{ skill.name }}
+  </button>
+</div>

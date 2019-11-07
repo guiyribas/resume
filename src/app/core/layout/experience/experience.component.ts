@@ -11,8 +11,8 @@ export class ExperienceComponent implements OnInit {
   constructor() {
     this.jobs = [
       {
-        company: 'Zap Technology (Current)',
-        function: 'Front end Developer',
+        company: 'ZapTec Technology (Current)',
+        function: 'Front end Developer - Remote',
         dateString: '04/2019 - Present',
         location: 'Cascavel, Paraná, Brazil',
         jobFunction:
@@ -22,7 +22,7 @@ export class ExperienceComponent implements OnInit {
       },
       {
         company: 'R.Project Web Studio',
-        function: 'Front end Developer',
+        function: 'Front end Developer - Remote',
         dateString: '01/2017 - 06/2017',
         location: 'Curitiba, Paraná, Brazil - Remote',
         jobFunction:
